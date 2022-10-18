@@ -1,0 +1,170 @@
+#pylenstool modification 20220905171822
+#pylenstool modification 20220819155845
+#Chi2tot: 1225.000249
+#Chi2pos: 1225.000249
+#Chi2_vel: 0.000000
+#Chi2_mass: 0.000000
+#Chi2formex: 0.000000
+#Chi2formey: 0.000000
+#Chi2l: 0.000000
+#log(Evidence): -653.485512
+runmode
+	reference	3 110.8269895 -73.4547234 
+	inverse	3 0.05000 500 
+	end	
+image
+	multfile	1 arcs.dat 
+	forme	-1 
+	newton	1 
+	z_m_limit	1 4 1 1.0 10 0.1 
+	z_m_limit	1 6 1 1.0 16 0.1 
+	z_m_limit	1 8 1 1.0 16 0.1 
+	z_m_limit	1 9 1 1.0 16 0.1 
+	z_m_limit	1 10 1 1.0 4.0 0.1 
+	z_m_limit	1 11 1 0.7 16 0.1 
+	z_m_limit	1 12 1 0.7 18 0.1 
+	z_m_limit	1 13 1 1.0 16 0.1 
+	z_m_limit	1 15 1 1.0 3 0.1 
+	z_m_limit	1 16 1 0.7 3 0.1 
+	z_m_limit	1 17 1 1.0 16 0.1 
+	z_m_limit	1 18 1 1.0 3 0.1 
+	z_m_limit	1 19 1 0.7 18 0.1 
+	z_m_limit	1 21 1 0.7 18 0.1 
+	z_m_limit	1 25 1 0.7 18 0.1 
+	z_m_limit	1 26 1 0.7 18 0.1 
+	mult_wcs	3 
+	sigposArcsec	1.131461500982304
+	end	
+grille
+	nombre	128 
+	polaire	0 
+	nlentille	156 
+	nlens_opt	4 
+	end	
+potentiel	O1	
+	profil	81 
+	x_centre	-1.330876 
+	y_centre	1.414503 
+	ellipticite	0.802122 
+	angle_pos	5.086277 
+	core_radius_kpc	89.726180 
+	cut_radius_kpc	1500.000000 
+	v_disp	928.421125 
+	z_lens	0.3900 
+	end	
+limit	O1	
+	x_centre	1 -10.000 10.000 0.010 
+	y_centre	1 -8.000 8.000 0.010 
+	ellipticite	1 0.0 0.9 0.001 
+	angle_pos	1 -90.000 900.000 0.100 
+	core_radius_kpc	1 20. 450. 0.10 
+	cut_radius_kpc	0 1500. 2500. 0.10 
+	v_disp	1 500. 2000. 0.10 
+	end	
+potentiel	O2	
+	profil	81 
+	x_centre	0.000000 
+	y_centre	0.000000 
+	ellipticite	0.161000 
+	angle_pos	29.200000 
+	core_radius_kpc	1.451045 
+	cut_radius_kpc	26.544579 
+	v_disp	424.268144 
+	z_lens	0.3900 
+	end	
+limit	O2	
+	x_centre	0 -1 1 0.010 
+	y_centre	0 -1 1 0.010 
+	ellipticite	0 0.0 0.8 0.001 
+	angle_pos	0 0.000 180.000 0.100 
+	core_radius_kpc	1 0. 3. 0.10 
+	cut_radius_kpc	1 3. 100. 0.10 
+	v_disp	1 10. 600. 0.10 
+	end	
+potential	O5	
+	profil	81 
+	x_centre	31.062519702365492 
+	y_centre	23.748480000040217 
+	ellipticity	0.09783980710560558 
+	angle_pos	18.085603 
+	core_radius_kpc	50.0 
+	cut_radius_kpc	1500.0 
+	v_disp	500 
+	z_lens	0.3900 
+	end	
+limit	O5	
+	x_centre	1 25.328925890453107 36.79611351427788 0.1 
+	y_centre	1 18.014886188127832 27.04434843627626 0.1 
+	ellipticity	1 0.0 0.7 0.01 
+	angle_pos	1 -90.0 90.0 0.1 
+	core_radius_kpc	1 1.0 100.0 0.1 
+	cut_radius_kpc	1 100.0 500.0 0.1 
+	v_disp	1 1.0 300.0 0.1 
+	end	
+potential	1023	
+	profil	81 
+	x_centre	-13.636773695182853 
+	y_centre	-4.423679999973729 
+	ellipticity	0.316618789178693 
+	angle_pos	50.6 
+	core_radius_kpc	50.0 
+	cut_radius_kpc	1500.0 
+	v_disp	500 
+	z_lens	0.3900 
+	end	
+limit	1023	
+	ellipticity	1 0.0 0.99 0.01 
+	angle_pos	1 -90.0 90.0 0.1 
+	core_radius_kpc	1 1.0 5.0 0.1 
+	cut_radius_kpc	1 5.0 200.0 0.1 
+	v_disp	1 1.0 300.0 0.1 
+	end	
+potfile0
+	filein	3 galcat.cat 
+	zlens	0.390000 
+	type	81 
+	corekpc	0.150000 
+	mag0	19.120000 
+	sigma	1 50 250 
+	cutkpc	1 3 90 
+	slope	0 4.000000 0.000000 
+	vdslope	0 4.000000 0.000000 
+	vdscatter	0 0.000000 0.000000 
+	rcutscatter	0 0.000000 0.000000 
+	end	
+cline
+	nplan	0 
+	dmax	50.000000 
+	algorithm	MARCHINGSQUARES 
+	limitHigh	1.0 
+	limitLow	0.100000 
+	end	
+grande
+	iso	0 0 0.000000 0.000000 0.000000 
+	name	best 
+	profil	0 0 
+	contour	1 0 
+	large_dist	0.300000 
+	end	
+cosmologie
+	model	1 
+	H0	70.000000 
+	omegaM	0.300000 
+	omegaX	0.700000 
+	omegaK	0. 
+	wX	-1.000000 
+	wa	0.000000 
+	end	
+cosmolimit
+	omegaM	0 0.000000 0.000000 
+	omegaX	0 0.000000 0.000000 
+	wX	0 0.000000 0.000000 
+	wa	0 0.000000 0.000000 
+	end	
+champ
+	xmin	-80.000000 
+	xmax	80.000000 
+	ymin	-80.000000 
+	ymax	80.000000 
+	end	
+fini

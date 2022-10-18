@@ -1,0 +1,164 @@
+#Chi2tot: 33.672993
+#Chi2pos: 33.672993
+#Chi2_vel: 0.000000
+#Chi2_mass: 0.000000
+#Chi2formx: 0.000000
+#Chi2formy: 0.000000
+#Chi2l: 0.000000
+#log(Evidence): -203.678292
+runmode
+	reference     3 110.826989 -73.454723
+	inverse   3 0.050000 500
+	end
+image
+	multfile    21 arcs.dat
+	form       -1
+	z_m_limit  1 4.0 3 2.286938 0.720654 0.1000 
+	z_m_limit  2 6.0 3 1.819475 0.382009 0.1000 
+	z_m_limit  3 8.0 3 14.312595 5.160866 0.1000 
+	z_m_limit  4 9.0 3 3.546651 3.546651 0.1000 
+	z_m_limit  5 10.0 3 1.412861 0.271849 0.1000 
+	z_m_limit  6 11.0 3 1.633257 1.503829 0.1000 
+	z_m_limit  7 12.0 3 1.890080 0.638308 0.1000 
+	z_m_limit  8 13.0 3 4.780374 4.205402 0.1000 
+	z_m_limit  9 15.0 3 2.302874 0.610254 0.1000 
+	z_m_limit  10 16.0 3 1.161612 0.157565 0.1000 
+	z_m_limit  11 17.0 3 2.337687 0.820181 0.1000 
+	z_m_limit  12 18.0 3 1.362197 0.275177 0.1000 
+	z_m_limit  13 19.0 3 1.340919 0.281315 0.1000 
+	z_m_limit  14 21.0 3 2.927581 1.656079 0.1000 
+	z_m_limit  15 25.0 3 5.327925 5.327925 0.1000 
+	z_m_limit  16 26.0 3 8.571886 8.571886 0.1000 
+	newton 1
+	mult_wcs    3
+	sigposArcsec   1.131462
+	end
+grid
+	number      128
+	polar     0
+	nlens   148
+	nlens_opt   4
+	end
+potential O1
+	profile       81
+	x_centre     2.002189
+	y_centre     0.202383
+	ellipticity     0.770640
+	angle_pos       183.989074
+	core_radius_kpc     93.983145
+	cut_radius_kpc     1500.000000
+	v_disp     1068.725699
+	z_lens     0.3900
+	end
+limit O1
+	x_centre     3 4.437853 4.437853 0.010000
+	y_centre     3 1.044741 1.044741 0.010000
+	ellipticity     3 0.855053 0.106297 0.000000
+	angle_pos     3 183.856451 2.098755 0.100000
+	core_radius_kpc     3 114.717434 50.500899 0.100000
+	v_disp    3 1079.887227 122.288167 0.100000
+	end
+potential O2
+	profile       81
+	x_centre     0.000000
+	y_centre     0.000000
+	ellipticity     0.161000
+	angle_pos       29.200000
+	core_radius_kpc     1.862909
+	cut_radius_kpc     14.798355
+	v_disp     427.023371
+	z_lens     0.3900
+	end
+limit O2
+	core_radius_kpc     3 1.463250 1.463250 0.100000
+	cut_radius_kpc     3 66.323814 51.026941 0.100000
+	v_disp    3 362.235490 80.428285 0.100000
+	end
+potential O3
+	profile       81
+	x_centre     28.108569
+	y_centre     21.788837
+	ellipticity     0.377307
+	angle_pos       32.490478
+	core_radius_kpc     5.560932
+	cut_radius_kpc     406.743722
+	v_disp     241.273822
+	z_lens     0.3900
+	end
+limit O3
+	x_centre     3 28.354091 6.256469 0.100000
+	y_centre     3 22.383139 5.440987 0.100000
+	ellipticity     3 0.278678 0.278678 0.000000
+	angle_pos     3 -5.805833 5.805833 0.100000
+	core_radius_kpc     3 21.483207 21.483207 0.100000
+	cut_radius_kpc     3 305.285992 303.231275 0.100000
+	v_disp    3 268.707269 72.689868 0.100000
+	end
+potential O4
+	profile       81
+	x_centre     -13.636774
+	y_centre     -4.423680
+	ellipticity     0.417608
+	angle_pos       -76.713265
+	core_radius_kpc     3.504200
+	cut_radius_kpc     125.496603
+	v_disp     23.908809
+	z_lens     0.3900
+	end
+limit O4
+	ellipticity     3 0.536110 0.536110 0.000000
+	angle_pos     3 4.197499 4.197499 0.100000
+	core_radius_kpc     3 3.081714 3.081714 0.100000
+	cut_radius_kpc     3 104.094125 104.094125 0.100000
+	v_disp    3 91.788266 91.788266 0.100000
+	end
+potfile0
+	filein  3 galcat.cat
+	zlens   0.390000
+	type    81
+	corekpc 0.150000
+	mag0    19.120000
+	sigma   3 133.302957 108.978340
+	cutkpc  3 18.293160 18.293160
+	slope   0 4.000000 0.000000
+	vdslope 0 4.000000 0.000000
+	vdscatter 0 0.000000 0.000000
+	rcutscatter 0 0.000000 0.000000
+	end
+cline
+	nplan    0
+	dmax     50.000000
+	algorithm   MARCHINGSQUARES
+	limitHigh   1.0
+	limitLow    0.100000
+	end
+large
+	iso         0 0 0.000000 0.000000 0.000000
+	name        best
+	profile      0 0
+	contour     1 0
+	velocity    -1
+	large_dist  0.300000
+	end
+cosmology
+	model       1
+	H0         70.000000
+	omegaM     0.300000
+	omegaX     0.700000
+	omegaK     0.
+	wX         -1.000000
+	wa         0.000000
+	end
+cosmolimit
+	omegaM		0 0.000000 0.000000
+	omegaX		0 0.000000 0.000000
+	wX		0 0.000000 0.000000
+	wa 	0 0.000000 0.000000
+	end
+field
+	xmin     -20.000000
+	xmax     20.000000
+	ymin     -20.000000
+	ymax     20.000000
+	end
+finish
