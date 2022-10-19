@@ -9,4 +9,4 @@ tar -Jcvf xxx.fits.tar.xz xxx.fits
 you can extract them doing 
 tar -Jxvf xxx.fits.tar.xz
 
-In each folder the best mapps is always the 0000_* map
+In each folder the best model maps are labeled 0000_*.fits
