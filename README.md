@@ -2,7 +2,7 @@
 Public repository for SMACS0723 lens model data associated with Mahler et al. 2022
 
 ICLv0 contains the files used for the first paper publication of data and are not outdated\
-ICLv1 contains the files used for the second release\
+ICLv1 contains the files used for the second release and match the magnifications predictions used in Claeyssens et al. 2022 - arXiv:2208.10450 \
 ICLv2 contains the files used for the third release and the revised manuscript\
 noICLv1 contains the files used for the second and third release and the revised manuscript
 
